@@ -1,15 +1,8 @@
-.body-pinguino {
-    background-color: #000000;
-    color: #fdfdfd;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-}
-
-.body-bananin {
-    background-color: #ffffff;
-    color: #ffffff;
+body {
+    background-image: url("./fondito.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: "Comic Sans MS", cursive, sans-serif;
     text-align: center;
     margin: 0;
@@ -18,24 +11,60 @@
 
 .p-pinguino {
     font-size: 20px;
-    color: #ffffff;
+    color: #000000;
     text-shadow: 2px 2px 5px #00ffea;
+    background: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 .p-bananin {
     font-size: 20px;
     color: #000000;
-    text-shadow: 2px 2px 5px #ffe600;
+    text-shadow: 2px 2px 5px #ffee00;
+    background: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
-.img-pinguino {
+.caja-pinguino {
     width: 225px;
-    border-radius: 1000px;
+    height: 225px;
+    border-radius: 50%;
     box-shadow: 0px 0px 20px #08ffea;
+    overflow: hidden; 
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff; 
 }
 
-.img-bananin {
+.caja-pinguino img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caja-bananin {
     width: 225px;
-    border-radius: 1000px;
+    height: 225px;
+    border-radius: 50%;
     box-shadow: 0px 0px 20px #ffee00;
+    overflow: hidden;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+.caja-bananin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
