@@ -95,34 +95,7 @@ a {
   font-size: 1.2rem;
 }
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .cards {
-    grid-template-columns: 1fr; /* 1 card por fila */
-    padding: 15px;
-  }
-
-  .card img {
-    height: 200px; /* reduce altura en pantallas chicas */
-  }
-
-  form {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-/* Ajustes para tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards por fila */
-  }
-}
+        .container {
+            width: 100%; /* Ocupa todo el ancho */
+        }
+    }
