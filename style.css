@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d300e;
+  color: #eee;
+}
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: #222222;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar a:hover {
+  color: #f04;
+}
+
+.inicio {
+  text-align: center;
+  padding: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+.card {
+  background-color: #111;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.extra-info {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #ccc;
+  text-align: left;
+}
+
+.info {
+  padding: 30px;
+  text-align: center;
+  background: #181818;
+}
+
+.formulario {
+  padding: 30px;
+  background: #222;
+  max-width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+.formulario input, 
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+.formulario button {
+  background: #f04;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.formulario button:hover {
+  background: #c03;
+}
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}

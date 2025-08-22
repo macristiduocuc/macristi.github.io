@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo Sobre L4D2</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Zombies Left 4 Dead 2</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>oa</p>
+  <nav class="navbar">
+    <a href="#inicio">Inicio</a>
+    <a href="#zombies">Zombis</a>
+    <a href="#info">Información</a>
+    <a href="#form">Formulario</a>
+  </nav>
+
+  <section id="inicio" class="inicio">
+    <h1>Zombies Left 4 Dead 2</h1>
+    <p>Left 4 Dead 2 es un videojuego de terror de disparos en primera persona desarrollado y publicado por Valve. La secuela de Left 4 Dead y el segundo juego de la serie Left 4 Dead, se lanzó para Microsoft Windows y Xbox 360 en noviembre de 2009, Mac OS X en octubre de 2010 y Linux en julio de 2013.
+        En esta pagina te explicamo sencillamente a como eliminar a cada zombie de la mejor forma​​ y a como podrias evitar sus ataques.</p>
+  </section>
+
+  <section id="zombies" class="cards">
+    <!-- Hunter -->
+    <div class="card" onclick="toggleInfo(this)">
+      <img src="./Hunter.webp" alt="Hunter">
+      <h3>Hunter</h3>
+      <div class="extra-info">
+        <p><strong>Aparición:</strong> Moderada</p>
+        <p><strong>Cómo matarlo:</strong> Escopeta de cerca o disparos rápidos antes de que salte.</p>
+        <p><strong>Cómo evitarlo:</strong> Escucha su gruñido y manten distancia con el equipo.</p>
+      </div>
+    </div>
+
+    <!-- Smoker -->
+    <div class="card" onclick="toggleInfo(this)">
+      <img src="./Smoker.webp" alt="Smoker">
+      <h3>Smoker</h3>
+      <div class="extra-info">
+        <p><strong>Aparición:</strong> Moderada</p>
+        <p><strong>Cómo matarlo:</strong> Disparar a distancia, cortar la lengua si atrapa a un aliado.</p>
+        <p><strong>Cómo evitarlo:</strong> Mantener cobertura y moverse por zonas abiertas.</p>
+      </div>
+    </div>
+
+    <!-- Boomer -->
+    <div class="card" onclick="toggleInfo(this)">
+      <img src="./Boomer.webp" alt="Boomer">
+      <h3>Boomer</h3>
+      <div class="extra-info">
+        <p><strong>Aparición:</strong> Muy común</p>
+        <p><strong>Cómo matarlo:</strong> Disparos a distancia, nunca cuerpo a cuerpo.</p>
+        <p><strong>Cómo evitarlo:</strong> Mantener distancia, esquivar su bilis.</p>
+      </div>
+    </div>
+
+    <!-- Witch -->
+    <div class="card" onclick="toggleInfo(this)">
+      <img src="./Witch.webp" alt="Witch">
+      <h3>Witch</h3>
+      <div class="extra-info">
+        <p><strong>Aparición:</strong> Poco común</p>
+        <p><strong>Cómo matarla:</strong> Escopetazo a la cabeza (crown) o rodearla.</p>
+        <p><strong>Cómo evitarla:</strong> No alumbrarla con linterna, no hacer ruido cerca.</p>
+      </div>
+    </div>
+
+    <!-- Tank -->
+    <div class="card" onclick="toggleInfo(this)">
+      <img src="./Tank.webp" alt="Tank">
+      <h3>Tank</h3>
+      <div class="extra-info">
+        <p><strong>Aparición:</strong> Muy rara</p>
+        <p><strong>Cómo matarlo:</strong> Usar fuego (cócteles molotov) y disparos concentrados.</p>
+        <p><strong>Cómo evitarlo:</strong> Mantener distancia y correr en espacios abiertos.</p>
+      </div>
+    </div>
+
+    <!-- Charger -->
+    <div class="card" onclick="toggleInfo(this)">
+      <img src="./Charger.webp" alt="Charger">
+      <h3>Charger</h3>
+      <div class="extra-info">
+        <p><strong>Aparición:</strong> Moderada</p>
+        <p><strong>Cómo matarlo:</strong> Disparos mientras carga o cuerpo a cuerpo en equipo.</p>
+        <p><strong>Cómo evitarlo:</strong> No alinearse, moverse lateralmente.</p>
+      </div>
+    </div>
+
+    <!-- Spitter -->
+    <div class="card" onclick="toggleInfo(this)">
+      <img src="./Spitter.webp" alt="Spitter">
+      <h3>Spitter</h3>
+      <div class="extra-info">
+        <p><strong>Aparición:</strong> Moderada</p>
+        <p><strong>Cómo matarla:</strong> A distancia, antes de que escupa ácido.</p>
+        <p><strong>Cómo evitarla:</strong> Salir inmediatamente del charco verde.</p>
+      </div>
+    </div>
+
+    <!-- Jockey -->
+    <div class="card" onclick="toggleInfo(this)">
+      <img src="./Jockey.webp" alt="Jockey">
+      <h3>Jockey</h3>
+      <div class="extra-info">
+        <p><strong>Aparición:</strong> Moderada</p>
+        <p><strong>Cómo matarlo:</strong> Disparos rápidos o ayuda de un compañero.</p>
+        <p><strong>Cómo evitarlo:</strong> Mantenerse en grupo para que no arrastre a nadie.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="info" class="info">
+    <h2>Información del Juego</h2>
+    <p><strong>Left 4 Dead 2</strong> es un shooter cooperativo lanzado en 2009 por Valve. 
+    Los jugadores deben sobrevivir a hordas de zombis junto a sus amigos, avanzando en campañas llenas de acción.</p>
+  </section>
+
+  <section id="form" class="formulario">
+    <form>
+      <h2>Formulario de Fans</h2>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <input type="text" placeholder="Personaje favorito">
+      <textarea placeholder="Tu opinión del juego"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Script para mostrar/ocultar info -->
+  <script>
+    function toggleInfo(card) {
+      const info = card.querySelector(".extra-info");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
 </body>
 </html>
